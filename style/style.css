@@ -109,6 +109,7 @@ header, main, footer {
     width: 100%;
 }
 
+
 /* End General */
 
 /* Page Header */
@@ -127,15 +128,15 @@ header, main, footer {
     display: flex;
     position: sticky;
     z-index: 40;
-    flex-direction: row;
-    background-color: red;
+    flex-direction: column;
+    background-image: linear-gradient(to right,rgb(99, 0, 0),red);
     align-items: center;
     justify-content: space-evenly;
     top: 0px
 }
 
 .header__menu {
-    background-color: red; 
+    background-image: linear-gradient(to right,rgb(155, 3, 3, 0.4),rgb(196, 1, 1, 0.4)); 
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -154,19 +155,58 @@ header, main, footer {
 
 .header__menu li a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
-    
   }
 
 .header__menu li a:hover {
-    color: white;
+    color: black;
     font-size: 105%;
     font-weight: bolder;
 }
 
-.logo {
-    width: 20%
+.logo h1{
+    background: #000000;
+    background: linear-gradient(to right, #000000 13%, #40FFFF 25%, #FFFFFF 50%, #FFFFFF 47%, #FFFFFF 62%, #40FFFF 75%, #000000 87%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: Fla_pulse 2s ease 0s infinite normal both;
+}
+
+@keyframes Fla_pulse {
+	0% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+		transform-origin: center center;
+	}
+
+	10% {
+		animation-timing-function: ease-in;
+		transform: scale(0.91);
+	}
+
+	17% {
+		animation-timing-function: ease-out;
+		transform: scale(0.98);
+	}
+
+	33% {
+		animation-timing-function: ease-in;
+		transform: scale(0.87);
+	}
+
+	45% {
+		animation-timing-function: ease-out;
+		transform: scale(1);
+	}
+}
+
+.logo h1:hover{
+    background: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .navbar {
@@ -400,6 +440,7 @@ header, main, footer {
     object-fit: cover;
 }
 
+
 /* MOBILE */
 @media screen and (min-width:0px) {
     * {
@@ -424,7 +465,7 @@ header, main, footer {
 }
 
 /* MOBILE */
-@media screen and (min-width:360px) {
+@media screen and (min-width:320px) {
     * {
         --row-height: 350px;
     }
@@ -441,8 +482,8 @@ header, main, footer {
         flex-direction: column;
     }
     .ytcontainer iframe{
-        width: 315px;
-        height: 173px;
+        width: 305px;
+        height: 160px;
     }
     .evt__img {
         width: 50%;
