@@ -10,7 +10,7 @@
 
 .pagetitle {
     color: red;
-    margin: 10px;
+    margin-top: 15vh;
 }
 
 .padding-top {
@@ -124,54 +124,29 @@ header, main, footer {
 
 /* Navbar */
 
-.header {
-    display: flex;
-    position: sticky;
-    z-index: 40;
-    flex-direction: column;
-    background-image: linear-gradient(to right,rgb(99, 0, 0),red);
-    align-items: center;
-    justify-content: space-evenly;
-    top: 0px
+.navbar {
+    background-image: linear-gradient(to left,rgb(43, 0, 0),red);
 }
 
-.header__menu {
-    background-image: linear-gradient(to right,rgb(155, 3, 3, 0.4),rgb(196, 1, 1, 0.4)); 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    float: left;
-    
-    
-}
-.header__menu li{
-    display: inline;
-    list-style: none;
-    padding: 0px 30px;
-    font-size: 15px;
+.nav-link {
+    background-color: maroon, 0.4;
 }
 
-.header__menu li a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-  }
-
-.header__menu li a:hover {
-    color: black;
-    font-size: 105%;
-    font-weight: bolder;
-}
-
-.logo h1{
+.navbar-brand h1 {
     background: #000000;
     background: linear-gradient(to right, #000000 13%, #40FFFF 25%, #FFFFFF 50%, #FFFFFF 47%, #FFFFFF 62%, #40FFFF 75%, #000000 87%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: Fla_pulse 2s ease 0s infinite normal both;
+    font-weight: bolder;
+}
+
+.navbar-brand h1:hover{
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 @keyframes Fla_pulse {
@@ -202,25 +177,32 @@ header, main, footer {
 	}
 }
 
-.logo h1:hover{
-    background: black;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.nav-link p {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.nav-link p:hover {
+    color: black;
+    font-size: 110%;
 }
 
-.navbar {
-    width: 80%;
-    float: left;
+.active p{
+    font-weight: bolder;
+    font-size: 17px
 }
 
-@media screen and (max-width:1024px) {
-        .header li {
-          float: none;
-          display: block;
-          text-align: left;
-        }
+.active p:hover{
+    color: white;
+    font-size: 17px
 }
+
+.navbar .navbar-toggler[aria-expanded="true"] {
+    color: white;
+    }
+    .navbar .navbar-toggler:focus{
+    color: white;
+    }
 
 /* End Navbar */
 /* Footer */
@@ -266,6 +248,10 @@ header, main, footer {
 
 /* Home Layout */
 
+#homepage {
+    margin-top: 10vh;
+}
+
 .column1 {
     float: left;
     width: 50%;
@@ -273,24 +259,53 @@ header, main, footer {
   }
   
 
-.linkedtitle {
-    padding-bottom: -20px;
+#hometitle1, #hometitle2{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder;
 }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+
+#hometitle1:hover, #hometitle2:hover {
+    font-size: 33px;
+    text-decoration: underline;
+}
+
+#homecaption1, #homecaption2{
+    text-decoration: none;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    text-align: left;
+}
+
+#homecaption1:hover, #homecaption2:hover {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.hometext h5,.hometext p{
+    background-color: black, rgb(0, 0, 0, 0.3);
+}
+
+.carousel-item img{
+    max-height: 65vh;
+    width: auto;
+}
+
+.carouselhome {
+    max-height: 65vh;
+    width: auto;
+    position: relative;
+}
 
 .home_img_top {
-      display: flex;
-      align-content: center;
-      width:"80%";
-      height:"80%";
-      object-fit: scale-down;
-      position: relative;
+      height:"auto";
+      object-fit: cover;
   }
 
   .home_img_bottom {
@@ -298,50 +313,6 @@ header, main, footer {
     align-content: center;
     width: 90%;
     position: relative;
-  }
-
-  .index1 {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .card1 {
-      flex: 1;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
-      height: 80vh;
-      position: relative;
-      margin: 10px;
-  }
-
-  .card1 a img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.card1 a {
-    width: 100%;
-    color: rgb(255, 255, 255);
-}   
-
-.card1 h3 {
-    background-color: rgb(0, 0, 0, 0, 0.6);
-    position: absolute;
-    bottom: 30px
-    
-    }  
-.card1 p {
-        background-color: rgb(0, 0, 0, 0.6);
-        position: absolute;
-        bottom: 5px
-        }      
-
-.card1 a:hover {
-    color: rgb(255, 255, 255);
   }
 
   .index2 {
@@ -357,7 +328,7 @@ header, main, footer {
     width: 80%;
     justify-content: center;
     align-items: center;
-    height: 60vh;
+    height: 40vh;
     position: relative;
     margin: 10px;
 }
@@ -375,13 +346,16 @@ header, main, footer {
 
 
 .card2 h5 {
-    background-color: rgb(0, 0, 0, 0.6);
+    background-color: rgb(0, 0, 0, 0.3);
     position: absolute;
-    bottom: 20px
+    bottom: 20px;
+    font-size: 17px;
     }
  
 .card2 a:hover {
     color: rgb(255, 255, 255);
+    text-decoration: underline;
+    font-weight: bold;
 }
 
   /* End Home Layout */
@@ -419,6 +393,16 @@ header, main, footer {
 }
 
   /* End Events */
+
+  /* Matches */
+
+  .accordion-flush h2 button:focus{
+    background-color: rgb(251, 132, 132);
+    color: #000000;
+    font-weight: bold;
+}
+
+  /* End Matches */
 
 
 /* Gallery */
@@ -568,5 +552,57 @@ header, main, footer {
     }
     .evt__imgcaption p {
         font-size: 16px;
+    }
+}
+/* HOME FONTSIZE */
+
+@media screen and (max-width:767px) {
+    #hometitle1, #hometitle2 {
+        font-size: 22px;
+    }
+    #homecaption1, #homecaption2 {
+        font-size: 14px
+    }
+    #hometitle1:hover, #hometitle2:hover {
+        font-size: 23px;
+    }
+    #homecaption1:hover, #homecaption2:hover {
+        font-size: 15px
+    }
+    .card2 h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #hometitle1, #hometitle2 {
+        font-size: 18px;
+    }
+    #homecaption1, #homecaption2 {
+        font-size: 12px
+    }
+    #hometitle1:hover, #hometitle2:hover {
+        font-size: 19px
+    }
+    #homecaption1:hover, #homecaption2:hover {
+        font-size: 13px;
+    }
+    .card2 h5 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    #hometitle1, #hometitle2 {
+        font-size: 14px;
+    }
+    #homecaption1, #homecaption2 {
+        font-size: 10px;
+    }
+    #hometitle1:hover, #hometitle2:hover {
+        font-size: 15px;
+    }
+    #homecaption1:hover, #homecaption2:hover {
+        font-size: 11px;
     }
 }
