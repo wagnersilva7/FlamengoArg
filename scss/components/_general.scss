@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.pagetitle {
+    color: $main-color;
+    margin-top: 15vh;
+}
+
+.padding-top {
+    padding-top: $main-gap;
+}
+
+.padding-bottom {
+    padding-bottom: $main-gap;
+}
+
+.padding-left {
+    padding-left: $main-gap;
+}
+
+.padding-right {
+    padding-right: $main-gap;
+}
+
+.padding {
+    padding: $main-gap;
+}
+
+.largepadding {
+    padding: 30px 60px
+}
+
+.mediumpadding {
+    padding: 20px 0px;
+}
+
+.margin-top {
+    margin-top: $main-gap;
+}
+
+.margin-bottom {
+    margin-bottom: $main-gap;
+}
+.margin-left {
+    margin-left: $main-gap;
+}
+.margin-right {
+    margin-right: $main-gap;
+}
+
+.margin {
+    margin: $main-gap;
+}
+
+.ytcontainer {
+    padding: 30px;
+    align-self: center;
+}
+
+header, main, footer {
+    width: 100%;
+}

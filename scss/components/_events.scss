@@ -1,0 +1,27 @@
+.evt__container {
+    width: 500px;
+}
+
+.evt__img {
+ width: 500px;
+ max-height: 366px;
+}
+
+.evt__imgcaption {
+    background: #000000;
+    bottom: 0;
+    top: 0;
+    color: #FFFFFF;
+    left: 0;
+    opacity: 0.5;
+    width: 500px;
+    height:25px;
+    p {
+    vertical-align: auto;
+    font-family: sans-serif;
+    font-size: 15px;   
+    }
+    p:hover {
+        opacity: 1;
+    }
+}

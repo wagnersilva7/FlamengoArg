@@ -1,0 +1,23 @@
+.pagefooter {
+    height: 50vh;
+    justify-content: center;
+}
+
+.footer__socialmedia{
+    font-weight: bolder;
+    color: $main-color;
+    padding-right: 20px;
+}
+.fa-brands {
+    color: $main-color;
+}
+.fa-brands:hover {
+    color: $main-color-dark;
+    font-size: 38px;
+}
+
+.fixed-bottom {
+    background-color: $main-color-lighter;
+    opacity: 1;
+}
+

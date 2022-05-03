@@ -1,0 +1,84 @@
+p, h1, h2, h3, h4, h5, h6, li, a {
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+p {   
+    line-height: 1.5;
+}
+
+a:hover {
+    font-size: 103%;
+}
+
+li {
+    font-size: 14px;
+}
+
+h1 {
+    margin: 10px;
+    font-size: 35px;
+}
+
+h3 {
+    margin: 10px;
+    font-size: 25px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+@media screen and (max-width:767px) {
+    #hometitle1, #hometitle2 {
+        font-size: 22px;
+    }
+    #homecaption1, #homecaption2 {
+        font-size: 14px
+    }
+    #hometitle1:hover, #hometitle2:hover {
+        font-size: 23px;
+    }
+    #homecaption1:hover, #homecaption2:hover {
+        font-size: 15px
+    }
+    .card2 h5 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #hometitle1, #hometitle2 {
+        font-size: 18px;
+    }
+    #homecaption1, #homecaption2 {
+        font-size: 12px
+    }
+    #hometitle1:hover, #hometitle2:hover {
+        font-size: 19px
+    }
+    #homecaption1:hover, #homecaption2:hover {
+        font-size: 13px;
+    }
+    .card2 h5 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:370px) {
+    #hometitle1, #hometitle2 {
+        font-size: 14px;
+    }
+    #homecaption1, #homecaption2 {
+        font-size: 10px;
+    }
+    #hometitle1:hover, #hometitle2:hover {
+        font-size: 15px;
+    }
+    #homecaption1:hover, #homecaption2:hover {
+        font-size: 11px;
+    }
+}

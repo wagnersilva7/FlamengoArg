@@ -1,0 +1,24 @@
+@media screen and (min-width:1024px) {
+    * {
+        --row-height: 350px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: $main-gap
+    }
+
+    header, main, footer {
+        width: 100%;
+    }
+    .index1, .index2 {
+        flex-direction: row;
+    }
+    .ytcontainer iframe{
+        width: 700px;
+        height: 384px;
+    }
+    .evt__imgcaption p {
+        font-size: 16px;
+    }
+}

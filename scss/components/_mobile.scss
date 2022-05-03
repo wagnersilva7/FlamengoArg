@@ -1,0 +1,38 @@
+@media screen and (min-width:320px) {
+    * {
+        --row-height: 350px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    header, main, footer {
+        width: 100%;
+    }
+    .index1, .index2 {
+        flex-direction: column;
+    }
+    .ytcontainer iframe{
+        width: 305px;
+        height: 160px;
+    }
+    .evt__img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .quienessomos__img {
+        width: 250px;
+        height: 50%;
+    }
+
+    .evt__imgcaption {
+        width: 250px;
+        height: 14px;
+    }
+    .evt__imgcaption p {
+        font-size: 10px;
+    }
+}
