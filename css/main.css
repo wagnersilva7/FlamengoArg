@@ -1,6 +1,8 @@
-* {
-  margin: 0;
+*, #hometitle1, #hometitle2, #homecaption1, #homecaption2 {
   padding: 0;
+  margin: 0; }
+
+* {
   box-sizing: border-box; }
 
 .pagetitle {
@@ -55,7 +57,8 @@ p, h1, h2, h3, h4, h5, h6, li, a {
   text-decoration: none; }
 
 p {
-  line-height: 1.5; }
+  line-height: 1.5;
+  font-size: 14px; }
 
 a:hover {
   font-size: 103%; }
@@ -111,8 +114,8 @@ h6 {
   #homecaption1:hover, #homecaption2:hover {
     font-size: 11px; } }
 
-#homepage {
-  margin-top: 10vh; }
+.homepage {
+  margin-top: 5vh; }
 
 .column1 {
   float: left;
@@ -120,29 +123,28 @@ h6 {
   position: relative; }
 
 #hometitle1, #hometitle2 {
-  text-decoration: none;
-  color: white;
-  padding: 0;
-  margin: 0;
   font-size: 30px;
-  text-align: left;
-  font-weight: bolder; }
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  text-align: left; }
 
 #hometitle1:hover, #hometitle2:hover {
   font-size: 33px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: bolder; }
 
 #homecaption1, #homecaption2 {
-  text-decoration: none;
-  color: white;
-  padding: 0;
-  margin: 0;
   font-size: 18px;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
   text-align: left; }
 
 #homecaption1:hover, #homecaption2:hover {
   font-size: 20px;
-  text-decoration: underline; }
+  text-decoration: underline;
+  font-weight: bolder; }
 
 .hometext h5, .hometext p {
   text-shadow: 1.5px 1.5px black; }
@@ -156,28 +158,20 @@ h6 {
   width: auto;
   position: relative; }
 
-.home_img_top {
-  height: "auto";
-  object-fit: cover; }
-
-.home_img_bottom {
-  display: flex;
-  align-content: center;
-  width: 90%;
-  position: relative; }
-
 .index2 {
-  width: 100%;
   display: flex;
-  margin-top: 3vh;
+  flex-direction: row;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  width: 100%;
+  margin-top: 3vh; }
 
 .card2 {
   flex: 1;
-  width: 80%;
+  flex-direction: unset;
   justify-content: center;
   align-items: center;
+  width: 80%;
   height: 40vh;
   position: relative;
   margin: 10px; }
@@ -206,10 +200,10 @@ h6 {
   max-height: 366px; }
 
 .evt__imgcaption {
-  background: #000000;
+  background: black;
   bottom: 0;
   top: 0;
-  color: #FFFFFF;
+  color: white;
   left: 0;
   opacity: 0.5;
   width: 500px;
@@ -348,6 +342,8 @@ h6 {
     flex-direction: column; }
   .ytcontainer iframe {
     width: 305px;
+    height: 160px;
+    width: 305px;
     height: 160px; }
   .evt__img {
     width: 50%;
@@ -394,7 +390,7 @@ h6 {
   .gallery {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px; }
-  header, main, footer {
+  .header, .main, .footer {
     width: 100%; }
   .index1, .index2 {
     flex-direction: row; }

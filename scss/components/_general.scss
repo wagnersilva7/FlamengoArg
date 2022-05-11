@@ -1,32 +1,31 @@
 * {
-    margin: 0;
-    padding: 0;
+    @extend %nopadding_nomargin;
     box-sizing: border-box;
 }
 
 .pagetitle {
-    color: $main-color;
+    color: map-get($colors,main);
     margin-top: 15vh;
 }
 
 .padding-top {
-    padding-top: $main-gap;
+    padding-top: map-get($gaps,main);
 }
 
 .padding-bottom {
-    padding-bottom: $main-gap;
+    padding-bottom: map-get($gaps,main);
 }
 
 .padding-left {
-    padding-left: $main-gap;
+    padding-left: map-get($gaps,main);
 }
 
 .padding-right {
-    padding-right: $main-gap;
+    padding-right: map-get($gaps,main);
 }
 
 .padding {
-    padding: $main-gap;
+    padding: map-get($gaps,main);
 }
 
 .largepadding {
@@ -38,21 +37,21 @@
 }
 
 .margin-top {
-    margin-top: $main-gap;
+    margin-top: map-get($gaps,main);
 }
 
 .margin-bottom {
-    margin-bottom: $main-gap;
+    margin-bottom: map-get($gaps,main);
 }
 .margin-left {
-    margin-left: $main-gap;
+    margin-left: map-get($gaps,main);
 }
 .margin-right {
-    margin-right: $main-gap;
+    margin-right: map-get($gaps,main);
 }
 
 .margin {
-    margin: $main-gap;
+    margin: map-get($gaps,main);
 }
 
 .ytcontainer {

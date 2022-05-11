@@ -1,16 +1,13 @@
 .gallery {
-    padding: $gallery-gap;
+    padding: map-get($gaps,gallery);
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-auto-rows: $gallery-row-height;
     gap: 20px;
-    background-color: $main-color;
+    background-color: map-get($colors, main);
     justify-content: center;
 }
-
-
 .gallery > img {
-    width: 100%;
-    height: 100%;
+    @include dimensions (100%, 100%);
     object-fit: cover;
 }

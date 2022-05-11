@@ -4,18 +4,18 @@
 }
 .footer__socialmedia{
     font-weight: bolder;
-    color: $main-color;
+    color: map-get($colors, main);
     padding-right: 20px;
 }
 .fa-brands {
-    color: $main-color;
+    color: map-get($colors, main);
 }
 .fa-brands:hover {
-    color: $main-color-dark;
+    color: map-get($colors, main-dark);
     font-size: 38px;
 }
 .fixed-bottom {
-    background-color: $main-color-lighter;
+    background-color: map-get($colors, main-lighter);
     opacity: 1;
 }
 

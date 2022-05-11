@@ -1,6 +1,66 @@
-$main-color: red;
-$main-color-dark: black;
-$main-color-lighter: white;
-$main-gap: 10px;
-$gallery-gap: 6px;
 $gallery-row-height: 300px;
+
+$colors:(
+    main:red,
+    main-dark: black,
+    main-lighter: white
+);
+$gaps:(
+    main: 10px,
+    gallery: 6px
+);
+$font_sizes:(
+    p: 14px,
+    li: 14px,
+    h6: 14px,
+    h5: 16px,
+    h3: 25px,
+    h1: 35px
+);
+%nopadding_nomargin {
+    padding: 0;
+    margin: 0;
+};
+@mixin flexbox ($justify, $align, $direction, $width){
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    width: $width;
+}
+@mixin homefont ($size, $decoration, $weight) {
+    font-size: $size;
+    text-decoration: $decoration;
+    font-weight: $weight;
+}
+@mixin dimensions ($x, $y) {
+    width: $x;
+    height: $y;
+}
+@mixin mediaquery ($screen) {
+    @if $screen == 'mobile-small'{
+        @media only screen and (min-width:0px) {
+            @content;
+    }
+}
+}
+@mixin mediaquery ($screen) {
+    @if $screen == 'mobile'{
+        @media only screen and (min-width:320px) {
+            @content;
+    }
+}
+}
+@mixin mediaquery ($screen) {
+    @if $screen == 'tablet'{
+        @media only screen and (min-width:650px) {
+            @content;
+    }
+}
+}
+@mixin mediaquery ($screen) {
+    @if $screen == 'desktop'{
+        @media only screen and (min-width:1024px) {
+            @content;
+    }
+}
+}

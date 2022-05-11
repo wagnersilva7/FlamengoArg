@@ -18,20 +18,16 @@
         flex-direction: row;
     }
     .ytcontainer iframe {
-        width: 525px;
-        height: 273px;
+        @include dimensions (525px, 273px);
     }
     .evt__img {
-        width: 100%;
-        height: 100%;
+        @include dimensions (100%, 100%);
     }
     .quienessomos__img {
-        width: 500px;
-        height: 100%;
+        @include dimensions (500px, 100%);
     }
     .evt__imgcaption {
-        width: 500px;
-        height: 100%;
+        @include dimensions (500px, 100%);
     }
     .evt__imgcaption p {
         font-size: 14px;

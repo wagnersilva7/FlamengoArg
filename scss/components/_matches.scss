@@ -1,5 +1,5 @@
 .accordion-flush h2 button:focus{
     background-color: rgb(251, 132, 132);
-    color: $main-color-dark;
+    color: map-get($colors,main-dark);
     font-weight: bold;
 }

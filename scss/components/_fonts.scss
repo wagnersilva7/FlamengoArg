@@ -5,6 +5,7 @@ p, h1, h2, h3, h4, h5, h6, li, a {
 
 p {   
     line-height: 1.5;
+    font-size: map-get($font_sizes,p);
 }
 
 a:hover {
@@ -12,25 +13,25 @@ a:hover {
 }
 
 li {
-    font-size: 14px;
+    font-size: map-get($font_sizes,li);
 }
 
 h1 {
     margin: 10px;
-    font-size: 35px;
+    font-size: map-get($font_sizes,h1);
 }
 
 h3 {
     margin: 10px;
-    font-size: 25px;
+    font-size: map-get($font_sizes,h3);
 }
 
 h5 {
-    font-size: 16px;
+    font-size: map-get($font_sizes,h5);
 }
 
 h6 {
-    font-size: 14px;
+    font-size: map-get($font_sizes,h6);
 }
 @media screen and (max-width:767px) {
     #hometitle1, #hometitle2 {

@@ -15,7 +15,6 @@
         flex-direction: column;
     }
     .ytcontainer iframe{
-        width: 210px;
-        height: 114px;
+        @include dimensions (210px, 114px);
     }
 }

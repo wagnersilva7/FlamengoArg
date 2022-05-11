@@ -5,18 +5,16 @@
 
     .gallery {
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: $main-gap
+        gap: map-get($gaps,main)
     }
-
-    header, main, footer {
+    .header, .main, .footer {
         width: 100%;
     }
     .index1, .index2 {
         flex-direction: row;
     }
     .ytcontainer iframe{
-        width: 700px;
-        height: 384px;
+        @include dimensions (700px, 384px)
     }
     .evt__imgcaption p {
         font-size: 16px;

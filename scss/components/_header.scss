@@ -1,5 +1,5 @@
 .navbar {
-    background-image: linear-gradient(to left, $main-color 25%, rgb(154, 0, 0) 50%, $main-color 75%);
+    background-image: linear-gradient(to left, map-get($colors,main) 25%, rgb(154, 0, 0) 50%, map-get($colors,main) 75%);
 }
 
 .nav-link {
@@ -7,17 +7,17 @@
 }
 
 .navbar-brand h1 {
-    background: linear-gradient(to right, $main-color-dark 13%, #40FFFF 25%, #FFFFFF 50%, #FFFFFF 47%, #FFFFFF 62%, #40FFFF 75%, $main-color-dark 87%);
+    background: linear-gradient(to right, map-get($colors,main-dark) 13%, #40FFFF 25%, #FFFFFF 50%, #FFFFFF 47%, #FFFFFF 62%, #40FFFF 75%, map-get($colors,main-dark) 87%);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: Fla_pulse 2s ease 0s infinite normal both;
     font-weight: bolder;
-    text-shadow: text-shadow(5px 5px 1px $main-color-lighter);
+    text-shadow: text-shadow(5px 5px 1px map-get($colors,main-lighter));
 }
 
 .navbar-brand h1:hover{
-    background: $main-color-lighter;
+    background: map-get($colors,main-lighter);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -52,12 +52,12 @@
 }
 
 .nav-link p {
-    color: $main-color-lighter;
+    color: map-get($colors,main-lighter);
     font-size: 15px;
     font-weight: bold;
 }
 .nav-link p:hover {
-    color: $main-color-dark;
+    color: map-get($colors,main-dark);
     font-size: 110%;
 }
 
@@ -67,13 +67,13 @@
 }
 
 .active p:hover{
-    color: $main-color-lighter;
+    color: map-get($colors,main-lighter);
     font-size: 17px
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
-    color: $main-color-lighter;
+    color: map-get($colors,main-lighter);
     }
     .navbar .navbar-toggler:focus{
-    color: $main-color-lighter;
+    color: map-get($colors,main-lighter);
     }

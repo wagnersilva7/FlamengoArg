@@ -15,22 +15,20 @@
         flex-direction: column;
     }
     .ytcontainer iframe{
+        @include dimensions (305px, 160px);
         width: 305px;
         height: 160px;
     }
     .evt__img {
-        width: 50%;
-        height: 50%;
+        @include dimensions (50%, 50%);
     }
 
     .quienessomos__img {
-        width: 250px;
-        height: 50%;
+        @include dimensions (250px, 50%);
     }
 
     .evt__imgcaption {
-        width: 250px;
-        height: 14px;
+        @include dimensions (250px, 14px);
     }
     .evt__imgcaption p {
         font-size: 10px;

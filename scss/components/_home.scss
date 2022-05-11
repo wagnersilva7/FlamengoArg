@@ -1,5 +1,5 @@
-#homepage {
-    margin-top: 10vh;
+.homepage {
+    margin-top: 5vh;
 }
 
 .column1 {
@@ -7,39 +7,31 @@
     width: 50%;
     position: relative;
   }
-  
 
 #hometitle1, #hometitle2{
-    text-decoration: none;
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-size: 30px;
+    @include homefont (30px, none, bold);
+    color: map-get($colors,main-lighter);
+    @extend %nopadding_nomargin;
     text-align: left;
-    font-weight: bolder;
 }
 
 #hometitle1:hover, #hometitle2:hover {
-    font-size: 33px;
-    text-decoration: underline;
+    @include homefont (33px, underline, bolder);
 }
 
 #homecaption1, #homecaption2{
-    text-decoration: none;
-    color: white;
-    padding: 0;
-    margin: 0;
-    font-size: 18px;
+    @include homefont (18px, none, 500);
+    color: map-get($colors,main-lighter);
+    @extend %nopadding_nomargin;
     text-align: left;
 }
 
 #homecaption1:hover, #homecaption2:hover {
-    font-size: 20px;
-    text-decoration: underline;
+    @include homefont (20px, underline, bolder);
 }
 
 .hometext h5,.hometext p{
-    text-shadow: 1.5px 1.5px $main-color-dark;
+    text-shadow: 1.5px 1.5px map-get($colors,main-dark);
 }
 
 .carousel-item img{
@@ -53,37 +45,21 @@
     position: relative;
 }
 
-.home_img_top {
-      height:"auto";
-      object-fit: cover;
-  }
-
-.home_img_bottom {
-    display: flex;  
-    align-content: center;
-    width: 90%;
-    position: relative;
-  }
-
 .index2 {
-    width: 100%;
     display: flex;
+    @include flexbox (center, center, row, 100%);
     margin-top: 3vh;
-    justify-content: center;
-    align-items: center;
   }
 
 .card2 {
     flex: 1;
-    width: 80%;
-    justify-content: center;
-    align-items: center;
+    @include flexbox (center, center, unset, 80%);
     height: 40vh;
     position: relative;
-    margin: 10px;
+    margin: map-get($gaps,main);
     a {
         width: 100%;
-        color: $main-color-lighter;
+        color: map-get($colors,main-lighter);
         img {
             width: 100%;
             height: 100%;
@@ -91,12 +67,12 @@
         }
     }
     a:hover {
-        color: $main-color-lighter;
+        color: map-get($colors,main-lighter);
         text-decoration: underline;
         font-weight: bold;
     }
     h5 {
-        background-color: rgb(0, 0, 0);
+        background-color: map-get($colors,main-dark);
         position: absolute;
         bottom: 10px;
         font-size: 17px;

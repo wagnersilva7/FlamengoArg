@@ -8,10 +8,10 @@
 }
 
 .evt__imgcaption {
-    background: #000000;
+    background: map-get($colors,main-dark);
     bottom: 0;
     top: 0;
-    color: #FFFFFF;
+    color: map-get($colors,main-lighter);
     left: 0;
     opacity: 0.5;
     width: 500px;
