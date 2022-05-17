@@ -63,17 +63,20 @@
 
 .active p{
     font-weight: bolder;
-    font-size: 17px
+    font-size: 16px
 }
 
 .active p:hover{
     color: map-get($colors,main-lighter);
-    font-size: 17px
+    font-size: 16px
 }
 
 .navbar .navbar-toggler[aria-expanded="true"] {
     color: map-get($colors,main-lighter);
     }
-    .navbar .navbar-toggler:focus{
+.navbar .navbar-toggler:focus{
     color: map-get($colors,main-lighter);
     }
+.navbar__favicon {
+    text-align: center;
+}
