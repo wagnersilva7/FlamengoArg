@@ -16,7 +16,7 @@
 }
 
 #hometitle1:hover, #hometitle2:hover {
-    @include homefont (33px, underline, bolder);
+    @include homefont (31px, underline, bolder);
 }
 
 #homecaption1, #homecaption2{
@@ -27,7 +27,7 @@
 }
 
 #homecaption1:hover, #homecaption2:hover {
-    @include homefont (20px, underline, bolder);
+    @include homefont (19px, none, bolder);
 }
 
 .hometext h5,.hometext p{
